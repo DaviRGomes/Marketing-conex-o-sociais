@@ -1,13 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState, useCallback } from "react";
+import { AnimatePresence } from "framer-motion";
+import LoadingScreen from "@/components/LoadingScreen";
+import HeroSection from "@/components/HeroSection";
+import ProblemSection from "@/components/ProblemSection";
+import BenefitsSection from "@/components/BenefitsSection";
+import PricingSection from "@/components/PricingSection";
+import CaptureModal from "@/components/CaptureModal";
 
 const Index = () => {
+  const [loading, setLoading] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleLoadingComplete = useCallback(() => setLoading(false), []);
+  const openModal = useCallback(() => setModalOpen(true), []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <AnimatePresence>
+        {loading && <LoadingScreen onComplete={handleLoadingComplete} />}
+      </AnimatePresence>
+
+      {!loading && (
+        <main className="min-h-screen">
+          <HeroSection onCtaClick={openModal} />
+          <ProblemSection />
+          <BenefitsSection />
+          <PricingSection onCtaClick={openModal} />
+          <CaptureModal open={modalOpen} onOpenChange={setModalOpen} />
+
+          <footer className="py-8 text-center text-xs text-muted-foreground border-t border-border">
+            © {new Date().getFullYear()} — Todos os direitos reservados.
+          </footer>
+        </main>
+      )}
+    </>
   );
 };
 
