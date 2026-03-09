@@ -29,15 +29,17 @@ const Index = () => {
             style={{ backgroundImage: `url(${bgLegal})` }}
           />
           <div className="fixed inset-0 z-0 bg-background/70" />
-          <HeroSection onCtaClick={openModal} />
-          <ProblemSection />
-          <BenefitsSection />
-          <PricingSection onCtaClick={openModal} />
-          <CaptureModal open={modalOpen} onOpenChange={setModalOpen} />
+          <div className="relative z-10">
+            <HeroSection onCtaClick={openModal} />
+            <ProblemSection />
+            <BenefitsSection />
+            <PricingSection onCtaClick={openModal} />
+            <CaptureModal open={modalOpen} onOpenChange={setModalOpen} />
 
-          <footer className="py-8 text-center text-xs text-muted-foreground border-t border-border">
-            © {new Date().getFullYear()} — Todos os direitos reservados.
-          </footer>
+            <footer className="py-8 text-center text-xs text-muted-foreground border-t border-border">
+              © {new Date().getFullYear()} — Todos os direitos reservados.
+            </footer>
+          </div>
         </main>
       )}
     </>
