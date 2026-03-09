@@ -33,7 +33,7 @@ const item = {
 };
 
 const ProblemSection = () => (
-  <section className="py-20 px-4">
+  <section className="py-12 px-4">
     <div className="container mx-auto max-w-5xl">
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
