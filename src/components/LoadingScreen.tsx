@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import iconJustice from "@/assets/icon-justice.png";
 
 interface LoadingScreenProps {
   onComplete: () => void;
@@ -28,6 +29,14 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
+      <motion.img
+        src={iconJustice}
+        alt="Balança da Justiça"
+        className="w-20 h-20 mb-6"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      />
       <motion.p
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
