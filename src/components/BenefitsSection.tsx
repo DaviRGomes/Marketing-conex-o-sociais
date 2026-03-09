@@ -14,7 +14,7 @@ const container = { hidden: {}, visible: { transition: { staggerChildren: 0.1 } 
 const item = { hidden: { opacity: 0, y: 25 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5 } } };
 
 const BenefitsSection = () => (
-  <section className="py-20 px-4 relative">
+  <section className="py-20 px-4 relative" id="benefits">
     <div className="absolute inset-0 bg-secondary/30 pointer-events-none" />
     <div className="container mx-auto max-w-5xl relative z-10">
       <motion.h2
