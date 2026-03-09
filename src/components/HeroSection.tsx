@@ -47,13 +47,21 @@ const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
               Profissionais do Judiciário.
             </motion.p>
 
-            <motion.div custom={2} variants={fadeUp} initial="hidden" animate="visible">
+            <motion.div custom={2} variants={fadeUp} initial="hidden" animate="visible" className="flex flex-wrap gap-4">
               <Button
                 onClick={onCtaClick}
                 size="lg"
                 className="bg-gradient-gold text-primary-foreground font-body font-bold text-lg px-10 py-6 rounded-lg animate-pulse-gold hover:scale-105 transition-transform"
               >
                 QUERO MINHA VAGA AGORA
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                onClick={() => document.getElementById("benefits")?.scrollIntoView({ behavior: "smooth" })}
+                className="border-primary text-primary font-body font-bold text-lg px-10 py-6 rounded-lg hover:bg-primary/10 transition-colors"
+              >
+                EXPLORAR BENEFÍCIOS
               </Button>
             </motion.div>
           </div>
