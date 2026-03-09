@@ -16,7 +16,7 @@ const fadeUp = {
 
 const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
   return (
-    <section className="relative min-h-[85vh] flex items-center py-16 px-4 overflow-hidden">
+    <section className="relative flex items-center py-16 px-4 overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
 
