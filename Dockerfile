@@ -1,53 +1,26 @@
-FROM node:20-alpine AS base
-
-FROM base AS deps
+FROM node:20-alpine AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
-# CORREÇÃO: Removido o prefixo 'Portfolio/' que causava o erro
 COPY package.json pnpm-lock.yaml* ./
-
 RUN pnpm i
 
 
-FROM base AS builder
+FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
-
-# CORREÇÃO: Adicionado '=' para evitar avisos de legado
-ENV NEXT_TELEMETRY_DISABLED=1
-
 RUN pnpm run build
 
 
-FROM base AS runner
-WORKDIR /app
+FROM nginx:alpine AS runner
 
-# CORREÇÃO: Adicionado '=' para evitar avisos de legado
-ENV NODE_ENV=production
-ENV NEXT_TELEMETRY_DISABLED=1
-
-ENV PORT=3009
-ENV HOSTNAME="0.0.0.0"
-
-RUN addgroup --system --gid 1001 nodejs
-RUN adduser --system --uid 1001 nextjs
-
-COPY --from=builder /app/public ./public
-
-RUN mkdir .next
-RUN chown nextjs:nodejs .next
-
-COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
-
-USER nextjs
+COPY --from=builder /app/dist /usr/share/nginx/html
 
 EXPOSE 3009
 
-CMD ["node", "server.js"]
+CMD ["nginx", "-g", "daemon off;"]
