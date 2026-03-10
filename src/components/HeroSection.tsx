@@ -32,7 +32,9 @@ const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
               className="font-display text-4xl sm:text-5xl lg:text-6xl leading-[1.1] tracking-wide mb-6"
             >
               Transforme sua atuação técnica em{" "}
-              <span className="text-gradient-gold">DOCUMENTOS INCONTESTÁVEIS</span>
+              <span className="text-gradient-gold">
+                DOCUMENTOS INCONTESTÁVEIS
+              </span>
             </motion.h1>
 
             <motion.p
@@ -42,12 +44,17 @@ const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
               animate="visible"
               className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl"
             >
-              Domine a redação de laudos e pareceres com total segurança jurídica e ética no
-              Judiciário e na Rede Intersetorial. Focado em Assistentes Sociais, Psicólogos e
-              Profissionais do Judiciário.
+              Domine a redação de laudos e pareceres com total segurança
+              jurídica e ética no Judiciário e na Rede Intersetorial. Focado em
+              Assistentes Sociais, Psicólogos e Profissionais do Judiciário.
             </motion.p>
 
-            <motion.div custom={2} variants={fadeUp} initial="hidden" animate="visible">
+            <motion.div
+              custom={2}
+              variants={fadeUp}
+              initial="hidden"
+              animate="visible"
+            >
               <Button
                 onClick={onCtaClick}
                 size="lg"
@@ -67,7 +74,7 @@ const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
             className="relative aspect-video rounded-xl overflow-hidden glow-gold border border-primary/20"
           >
             <iframe
-              src="https://drive.google.com/file/d/1Or00Ske5vsme2VtZIPqheyCltZRAIOY9/preview"
+              src="https://drive.google.com/file/d/1YkVhjxoqvj5OhnM2G72hfjF0GFqWZgtW/view?usp=sharing"
               className="w-full h-full"
               allow="autoplay"
               allowFullScreen
