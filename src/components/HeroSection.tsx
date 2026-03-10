@@ -73,13 +73,7 @@ const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
             animate="visible"
             className="relative aspect-video rounded-xl overflow-hidden glow-gold border border-primary/20"
           >
-            <iframe
-              src="https://drive.google.com/file/d/1YkVhjxoqvj5OhnM2G72hfjF0GFqWZgtW/view?usp=sharing"
-              className="w-full h-full"
-              allow="autoplay"
-              allowFullScreen
-              title="Vídeo do curso"
-            />
+            <script src="https://stream.mux.com/TQRtqMWhbvg3V2FbqWzS9wb2R2ktVg4PIBv7pq6csB8.m3u8"></script>
             {/* Block pop-out button */}
             <div className="absolute top-0 right-0 w-14 h-14 z-10" />
           </motion.div>
