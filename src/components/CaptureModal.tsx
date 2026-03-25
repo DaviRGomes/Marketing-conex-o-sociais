@@ -65,7 +65,7 @@ const CaptureModal = ({ open, onOpenChange }: CaptureModalProps) => {
     setSubmitted(true);
   };
 
-  const checkoutUrl = `https://pay.kiwify.com.br/2CBorQ6?name=${encodeURIComponent(form.name)}&email=${encodeURIComponent(form.email)}&phone=${encodeURIComponent(form.phone)}`;
+  const checkoutUrl = `https://pay.kiwify.com.br/MhN491a?name=${encodeURIComponent(form.name)}&email=${encodeURIComponent(form.email)}&phone=${encodeURIComponent(form.phone)}`;
 
   const handleClose = (val: boolean) => {
     if (!val) {
