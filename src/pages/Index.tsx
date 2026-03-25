@@ -4,7 +4,11 @@ import LoadingScreen from "@/components/LoadingScreen";
 import HeroSection from "@/components/HeroSection";
 import ProblemSection from "@/components/ProblemSection";
 import BenefitsSection from "@/components/BenefitsSection";
+import CurriculumSection from "@/components/CurriculumSection";
+import InstructorSection from "@/components/InstructorSection";
+import GuaranteeSection from "@/components/GuaranteeSection";
 import PricingSection from "@/components/PricingSection";
+import FAQSection from "@/components/FAQSection";
 import CaptureModal from "@/components/CaptureModal";
 import bgLegal from "@/assets/bg-legal.jpg";
 
@@ -33,7 +37,11 @@ const Index = () => {
             <HeroSection onCtaClick={openModal} />
             <ProblemSection />
             <BenefitsSection />
+            <CurriculumSection />
+            <InstructorSection />
+            <GuaranteeSection />
             <PricingSection onCtaClick={openModal} />
+            <FAQSection />
             <CaptureModal open={modalOpen} onOpenChange={setModalOpen} />
 
             <footer className="py-8 text-center text-xs text-muted-foreground border-t border-border">
