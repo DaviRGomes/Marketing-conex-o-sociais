@@ -20,7 +20,7 @@ function useCountdown() {
   const getTarget = () => {
     const stored = sessionStorage.getItem("oferta_deadline");
     if (stored) return parseInt(stored, 10);
-    const target = Date.now() + 24 * 60 * 60 * 1000;
+    const target = Date.now() + 63047000;
     sessionStorage.setItem("oferta_deadline", String(target));
     return target;
   };
