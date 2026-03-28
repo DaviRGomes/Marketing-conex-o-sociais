@@ -4,7 +4,7 @@ import { ChevronDown, BookOpen, PlayCircle } from "lucide-react";
 
 const modules = [
   {
-    number: "01",
+    number: "Módulo 1",
     title: "Fundamentos Jurídicos dos Documentos Técnicos",
     lessons: [
       "O que é laudo e o que é parecer: diferenças fundamentais",
@@ -14,7 +14,7 @@ const modules = [
     ],
   },
   {
-    number: "02",
+    number: "Módulo 2",
     title: "Metodologia de Coleta e Análise de Dados",
     lessons: [
       "Técnicas de entrevista e escuta qualificada",
@@ -24,7 +24,7 @@ const modules = [
     ],
   },
   {
-    number: "03",
+    number: "Módulo 3",
     title: "Redação Técnica no Judiciário",
     lessons: [
       "Linguagem técnica vs. linguagem jurídica",
@@ -34,7 +34,7 @@ const modules = [
     ],
   },
   {
-    number: "04",
+    number: "Módulo 4",
     title: "Laudos para Casos de Alta Complexidade",
     lessons: [
       "Situações de violência doméstica e proteção de crianças",
@@ -44,7 +44,7 @@ const modules = [
     ],
   },
   {
-    number: "05",
+    number: "Módulo 5",
     title: "Intersetorialidade e Rede de Proteção",
     lessons: [
       "Comunicação entre CRAS, CREAS e Judiciário",
@@ -54,7 +54,7 @@ const modules = [
     ],
   },
   {
-    number: "06",
+    number: "Módulo 6",
     title: "Modelos Práticos e Simulações Reais",
     lessons: [
       "Templates prontos para as principais situações",
@@ -104,7 +104,7 @@ const CurriculumSection = () => {
                 className="w-full flex items-center gap-4 p-5 text-left hover:bg-white/5 transition-colors"
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
               >
-                <span className="font-display text-2xl text-gradient-gold shrink-0 w-10">
+                <span className="font-display text-sm text-gradient-gold shrink-0 whitespace-nowrap">
                   {mod.number}
                 </span>
                 <span className="font-display text-lg tracking-wide flex-1">

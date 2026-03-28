@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Shield, Zap, FileText, Lock, Network, Award } from "lucide-react";
 
 const pillars = [
-  { icon: Shield, title: "Segurança Jurídica", desc: "Fundamentação técnica impecável em cada documento produzido." },
+  { icon: Shield, title: "Segurança Jurídica", desc: "Fundamentação teórica, normativa e metodológica impecável em cada documento produzido." },
   { icon: Zap, title: "Agilidade", desc: "Método para escrita rápida e assertiva sem perder qualidade." },
-  { icon: FileText, title: "Padronização", desc: "Modelos prontos para laudos e pareceres do Judiciário." },
-  { icon: Lock, title: "Ética", desc: "Resguardo do sigilo e normas profissionais em cada etapa." },
-  { icon: Network, title: "Intersetorialidade", desc: "Diálogo eficiente entre CRAS/CREAS e Judiciário." },
-  { icon: Award, title: "Autoridade", desc: "Torne-se referência na elaboração de documentos técnicos." },
+  { icon: FileText, title: "Estrutura Metodológica", desc: "Estrutura e percursos metodológicos para elaboração de documentos nas políticas sociais, com exemplos práticos." },
+  { icon: Lock, title: "Ética", desc: "Resguardo do sigilo e normas profissionais em cada etapa, respeitando a Lei Geral de Proteção de Dados e o Código de Ética profissional." },
+  { icon: Network, title: "Inteligência Artificial", desc: "IA como ferramenta auxiliar, utilizando recursos tecnológicos de forma crítica e estratégica, reconhecendo a responsabilidade ética, jurídica e institucional indelegável implicada na produção e assinatura de documentos." },
+  { icon: Award, title: "Autoridade", desc: "Torne-se referência na elaboração de documentos e opinião técnica." },
 ];
 
 const container = { hidden: {}, visible: { transition: { staggerChildren: 0.1 } } };
@@ -31,7 +31,7 @@ const BenefitsSection = () => (
         viewport={{ once: true }}
         className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto"
       >
-        Uma formação completa para dominar cada aspecto da elaboração documental.
+        Uma formação completa para dominar cada aspecto da elaboração documental técnico-operativa.
       </motion.p>
 
       <motion.div
