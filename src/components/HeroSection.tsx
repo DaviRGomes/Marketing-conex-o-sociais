@@ -44,9 +44,11 @@ const HeroSection = ({ onCtaClick }: HeroSectionProps) => {
               animate="visible"
               className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl"
             >
-              Domine a redação de laudos e pareceres com total segurança
-              jurídica e ética no Judiciário e na Rede Intersetorial. Focado em
-              Assistentes Sociais, Psicólogos e Profissionais do Judiciário.
+              Domine a elaboração de relatórios, laudos e pareceres com total segurança
+              jurídica e ética no Judiciário e na Rede Intersetorial. Focado para
+              Assistentes Sociais, Psicólogos, Advogados, Pedagogos, Profissionais
+              que atuam no Judiciário, SUAS, SUS, no Terceiro Setor e no Sistema
+              de Garantia de Direitos.
             </motion.p>
 
             <motion.div
