@@ -18,7 +18,7 @@ const problems = [
     icon: Clock,
     title: "Pressão por prazos e fundamentação",
     description:
-      "Demandas urgentes do Judiciário exigem documentos bem fundamentados em prazos cada vez mais curtos.",
+      "Demandas urgentes do Judiciário e do cotidiano profissional na rede intersetorial exigem documentos com fundamentação teórica, normativa e metodológica, em prazos cada vez mais curtos.",
   },
 ];
 

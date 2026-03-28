@@ -4,7 +4,7 @@ import { ChevronDown, BookOpen, PlayCircle } from "lucide-react";
 
 const modules = [
   {
-    number: "01",
+    number: "Módulo 1",
     title: "Fundamentos Jurídicos dos Documentos Técnicos",
     lessons: [
       "O que é laudo e o que é parecer: diferenças fundamentais",
@@ -14,7 +14,7 @@ const modules = [
     ],
   },
   {
-    number: "02",
+    number: "Módulo 2",
     title: "Metodologia de Coleta e Análise de Dados",
     lessons: [
       "Técnicas de entrevista e escuta qualificada",
