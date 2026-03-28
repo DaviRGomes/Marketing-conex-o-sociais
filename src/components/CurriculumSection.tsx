@@ -23,46 +23,6 @@ const modules = [
       "Como organizar as informações coletadas",
     ],
   },
-  {
-    number: "Módulo 3",
-    title: "Redação Técnica no Judiciário",
-    lessons: [
-      "Linguagem técnica vs. linguagem jurídica",
-      "Como fundamentar argumentos com segurança ética",
-      "Erros mais comuns que comprometem a validade do documento",
-      "Revisão e formatação final do documento",
-    ],
-  },
-  {
-    number: "Módulo 4",
-    title: "Laudos para Casos de Alta Complexidade",
-    lessons: [
-      "Situações de violência doméstica e proteção de crianças",
-      "Laudos em processos de guarda e adoção",
-      "Documentos em casos de saúde mental e internação",
-      "Parecer em medidas socioeducativas",
-    ],
-  },
-  {
-    number: "Módulo 5",
-    title: "Intersetorialidade e Rede de Proteção",
-    lessons: [
-      "Comunicação entre CRAS, CREAS e Judiciário",
-      "Como referenciar e contrarreferir com segurança",
-      "Documentação em trabalho conjunto com outras equipes",
-      "Modelo de ofício e relatório interinstitucional",
-    ],
-  },
-  {
-    number: "Módulo 6",
-    title: "Modelos Práticos e Simulações Reais",
-    lessons: [
-      "Templates prontos para as principais situações",
-      "Estudo de caso: da coleta à entrega do documento",
-      "Simulação de defesa do laudo em audiência",
-      "Banco de modelos atualizado com a jurisprudência atual",
-    ],
-  },
 ];
 
 const CurriculumSection = () => {
