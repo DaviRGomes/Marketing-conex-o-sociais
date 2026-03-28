@@ -41,7 +41,7 @@ const ProblemSection = () => (
         viewport={{ once: true }}
         className="font-display text-3xl sm:text-4xl text-center mb-4 tracking-wide"
       >
-        Você se identifica com alguma dessas <span className="text-gradient-gold">dores</span>?
+        Você se identifica com alguns desses <span className="text-gradient-gold">Desafios</span>?
       </motion.h2>
       <motion.p
         initial={{ opacity: 0 }}
