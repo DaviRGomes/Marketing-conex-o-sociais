@@ -5,22 +5,26 @@ import { ChevronDown, BookOpen, PlayCircle } from "lucide-react";
 const modules = [
   {
     number: "Módulo 1",
-    title: "Fundamentos Jurídicos dos Documentos Técnicos",
+    title: "Instrumentação Técnica no Poder Judiciário: laudos, relatórios e pareceres",
     lessons: [
-      "O que é laudo e o que é parecer: diferenças fundamentais",
-      "Base legal: Código de Ética e legislações pertinentes",
-      "Responsabilidade profissional e sigilo documental",
-      "Estrutura obrigatória de um documento técnico",
+      "Aula 1 – Instrumentalidade profissional e a dimensão técnico-operativa do Serviço Social",
+      "Aula 2 – Linguagens profissionais e a escrita técnica em Serviço Social",
+      "Aula 3 – Requisições profissionais no Poder Judiciário e o Estudo Social",
+      "Aula 4 – Elaborando Laudos, Relatórios e Pareceres Técnicos",
+      "Aula 5 – Estudos de Caso em Laudos, Relatórios e Pareceres Técnicos",
+      "Aula 6 – Reuniões, Visitas Institucionais, Correição, Inspeção e sistematização técnica profissional",
     ],
   },
   {
     number: "Módulo 2",
-    title: "Metodologia de Coleta e Análise de Dados",
+    title: "Produção Documental Técnico-Operativa na Rede Socioassistencial: elaboração de Relatórios, Laudos e Pareceres",
     lessons: [
-      "Técnicas de entrevista e escuta qualificada",
-      "Visita domiciliar: registros que protegem o profissional",
-      "Análise de documentação e prontuários",
-      "Como organizar as informações coletadas",
+      "Aula 1 – Inteligência Artificial, Instrumentalidade e Responsabilidade Técnico-Profissional",
+      "Aula 2 – Estrutura Técnico-Argumentativa e Fundamentação Normativa do Documento",
+      "Aula 3 – Fundamentação Normativa Aplicada: Demonstração de Critérios e Prova Técnica",
+      "Aula 4 – Tipificação, Adequação do Serviço e Fundamentação Técnica da Indicação",
+      "Aula 5 – Método Estruturante de Elaboração do Relatório Técnico",
+      "Aula 6 – Laboratório de Uso Estratégico da Inteligência Artificial e Validação Técnico-Profissional",
     ],
   },
 ];
@@ -46,8 +50,8 @@ const CurriculumSection = () => {
           viewport={{ once: true }}
           className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto"
         >
-          {modules.length} módulos completos, do básico ao avançado, com modelos
-          prontos para usar imediatamente.
+          2 módulos de conteúdo programático com modelo de estruturas e percursos
+          para elaboração de documentos no judiciário e na rede intersetorial.
         </motion.p>
 
         <div className="space-y-3">
